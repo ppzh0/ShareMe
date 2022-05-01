@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *, ::before, ::after {
     box-sizing: border-box;
 }
@@ -60,13 +62,20 @@ nav /* Use Strong Selectors */ span /* Don't Use `!important` proprty */ .navLin
 
 .art-child {
     width: clamp(290px, 310px, 450px);
-    box-shadow: 0 0 1.55rem rgba(0, 0, 0, 0.4);
-    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
     display: grid;
     justify-items: stretch;
-    border: 1px solid transparent;
     border-radius: 1.55rem;
     margin-bottom: 5rem;
+}
+
+.art-child:hover {
+    box-shadow: 0 0 2.55rem rgba(0, 0, 0, 0.4);
+    border: 1px solid transparent;
+    border-radius: 1.99rem;
+    padding: 20px;
+    transition: all 2s cubic-bezier(0, 4, 0.8, 1.4);
 }
 
 .art-child .art-header {
