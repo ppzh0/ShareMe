@@ -1,0 +1,47 @@
+@charset "UTF8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+main span a {
+    text-decoration: none;
+    color: #1e1e1e;
+    padding: 0.432rem;
+    line-height: 1.5;
+}
+
+a:hover {
+    text-decoration: underline dashed;
+    color: #fff;
+    background-color: rgba(116, 160, 114, 0.849);
+    transition: color 800ms cubic-bezier(0.6, -0.28, 0.735, 0.045),background-color 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+main p {
+    margin: auto;
+    margin-top: clamp(2rem, 2.5rem, 3rem);
+    margin-bottom: clamp(3rem, 3.2rem, 3.6rem);
+    width: clamp(90%, 50%, 60%);
+    line-height: 1.5rem;
+    word-spacing: 0.2rem;
+}
+
+
+
+.backLink {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
