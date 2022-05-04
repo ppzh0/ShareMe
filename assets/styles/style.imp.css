@@ -17,6 +17,6 @@ html body, img, p, h1, h2, h3, h4, h5, h6, a, main, article {
 }
 
 *::selection {
-    color: #ff0000;
+    color: #ff0000d3;
     background-color: #000;
 }
