@@ -30,15 +30,51 @@ main {
 }
 
 main p {
-    margin: auto;
-    margin-top: clamp(2rem, 2.5rem, 3rem);
-    margin-bottom: clamp(3rem, 3.2rem, 3.6rem);
-    width: clamp(90%, 50%, 60%);
-    line-height: 1.5rem;
-    word-spacing: 0.2rem;
+    margin: 3rem auto;
+    width: 45%;
+    line-height: 1.7rem;
+    word-spacing: 0.4rem;
 }
 
+@media screen and (max-width: 481px) and (max-width: 1024px) and (orientation:portrait) {
+    main p {
+        margin: 4rem auto;
+        width: 90%;
+        line-height: 1.5rem;
+        word-spacing: 0.2rem;
+    }
+    body {
+        background-color: #555151;
+        color: #fff;
+    }
 
+    a {
+        background-color: #fff;
+        color: #1e1e1e;
+        padding: 0.343rem 0.345rem;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape) {
+    main p {
+        margin: 4rem auto;
+        width: 90%;
+        line-height: 1.5rem;
+        word-spacing: 0.2rem;
+    }
+    body {
+        background-color: #555151;
+        color: #fff;
+    }
+
+    a {
+        background-color: #fff;
+        color: #1e1e1e;
+        padding: 0.343rem 0.345rem;
+        border-radius: 1rem;
+    }
+}
 
 .backLink {
     position: absolute;

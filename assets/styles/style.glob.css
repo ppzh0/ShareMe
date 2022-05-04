@@ -120,3 +120,45 @@ article span a:hover {
 article img {
     width: clamp(250px, 260px, 270px);
 }
+
+@media screen and (max-width: 481px) and (max-width: 1024px) {
+    body {
+        background-color: #000000;
+        color: #000000cc;
+    }
+
+    main>.art-main-box>.art-child {
+        background-color: #ffffff;
+    }
+
+    main>.art-main-box>.art-child:hover {
+        box-shadow: 0 0 4.55rem rgba(255, 255, 255, 0.4);
+        transition: all 2s cubic-bezier(0, 4, 0.8, 1.4);
+    }
+
+    body>span>b{
+        color: #fff;
+        background-color: #fff;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape) {
+    body {
+        background-color: #000000;
+        color: #000000cc;
+    }
+
+    main>.art-main-box>.art-child {
+        background-color: #ffffff;
+    }
+
+    main>.art-main-box>.art-child:hover {
+        box-shadow: 0 0 4.55rem rgba(255, 255, 255, 0.4);
+        transition: all 2s cubic-bezier(0, 4, 0.8, 1.4);
+    }
+
+    body>span>b{
+        color: #fff;
+        background-color: #fff;
+    }    
+}
