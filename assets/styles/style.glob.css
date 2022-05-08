@@ -44,9 +44,13 @@ nav  span .navLink  {   /* Use Strong Selectors. Don't Use `!important` proprty.
     border-radius: 0.25rem;
     font-weight: 400;
     line-height: 1.5;
-    /* transition effects on load */
+    /* transition effects on hover */
     transition: color 500ms ease-in-out, background-color 1.20s cubic-bezier(0, 0, 0.2, 1), border-color 0.15s ease-in-out, box-shadow 3s ease-in-out;
 
+}
+
+.art-main-box .art-child {
+    padding: 2rem;
 }
 
 .navLink:hover /* Hover Effects */ {
@@ -79,10 +83,9 @@ nav  span .navLink  {   /* Use Strong Selectors. Don't Use `!important` proprty.
 .art-child:hover {
     /* Hover effects */
     box-shadow: 0 0 2.55rem rgba(0, 0, 0, 0.4);
-    border: 1px solid transparent;
-    border-radius: 1.99rem;
-    padding: 20px;
-    transition: all 2s cubic-bezier(0, 4, 0.8, 1.4);
+    border: 2px dotted rgba(50, 10, 5, 0.303);
+    border-radius: 2.2rem;
+    transition: border-radius 2s cubic-bezier(0, 4, 0.8, 1.4), border 1s cubic-bezier(0, 4, 0.8, 1.4);
 }
 
 .art-child .art-header {
@@ -92,7 +95,7 @@ nav  span .navLink  {   /* Use Strong Selectors. Don't Use `!important` proprty.
 main>article>article span {
     /* Layout for linking button */
     display: grid;
-    justify-content: end;
+    justify-content: space-around;
 }
 
 main>article>article>span>a {
@@ -107,7 +110,7 @@ main>article>article>span>a {
     line-height: 1.5;
 }
 
-article span a:hover {
+article span a:hover:not(#downloadLink) {
     /* Hover effect for link button */
     background-color: rgba(0, 0, 0, 0.226);
     box-shadow: 0 0 0.95rem rgba(0, 0, 0, 0.379);
@@ -122,6 +125,7 @@ article span a:hover {
 
 article img {
     width: clamp(250px, 260px, 270px);
+    padding-top: 2rem;
 }
 
 @media screen and (max-width: 481px) and (max-width: 1024px) {
@@ -135,7 +139,7 @@ article img {
     }
 
     main>.art-main-box>.art-child:hover {
-        box-shadow: 0 0 4.55rem rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 3.5rem rgba(255, 255, 255, 0.4);
         transition: all 2s cubic-bezier(0, 4, 0.8, 1.4);
     }
 
@@ -147,7 +151,7 @@ article img {
 
 @media screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape) {
     body {
-        background-color: #a7a4a4;
+        background-color: #000000ea;
         color: #000000cc;
     }
 
@@ -156,12 +160,34 @@ article img {
     }
 
     main>.art-main-box>.art-child:hover {
-        box-shadow: 0 0 4.55rem rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 3.5rem rgba(255, 255, 255, 0.4);
         transition: all 2s cubic-bezier(0, 4, 0.8, 1.4);
     }
 
     body>span>b{
         color: #fff;
         background-color: #fff;
-    }    
+    }
+
+    .navLink:hover {
+        background-color: #1e8dd6f1;
+    }
+}
+
+summary {
+    padding: 1.5rem;
+    background-color: gray;
+    border-radius: 5vh;
+    user-select: none;
+}
+
+details {
+    cursor: pointer;
+    width: fit-content;
+    height: auto;
+}
+
+.me23 {
+    display: flex;
+    justify-content: center;
 }
