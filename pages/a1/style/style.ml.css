@@ -1,0 +1,95 @@
+@charset "UTF8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+main>span a {
+    text-decoration: none;
+    color: #1e1e1e;
+    padding: 0.432rem;
+    line-height: 1.5;
+}
+
+.backLink>a:hover {
+    text-decoration: underline dotted;
+    padding: 0.4rem 0.4rem;
+    color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border-radius: 0 0 0.7rem 0;
+    transition: border-radius 2s cubic-bezier(0.445, 0.05, 0.55, 0.95), color 600ms cubic-bezier(0.6, -0.28, 0.735, 0.045), padding 2300ms cubic-bezier(0.075, 0.82, 0.165, 1),background-color 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+main p {
+    margin: 3rem auto;
+    width: 45%;
+    line-height: 1.7rem;
+    word-spacing: 0.4rem;
+}
+
+@media screen and (max-width: 481px) and (max-width: 1024px) and (orientation:portrait) {
+    main p {
+        margin: 4rem auto;
+        width: 90%;
+        line-height: 1.5rem;
+        word-spacing: 0.2rem;
+    }
+    body {
+        background-color: #555151;
+        color: #fff;
+    }
+
+    a:not(#downloadLink) {
+        background-color: #fff;
+        color: #1e1e1e;
+        padding: 0.343rem 0.345rem;
+        border-radius: 0 0 0.5rem 0;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape) {
+    main p {
+        margin: 4rem auto;
+        width: 90%;
+        line-height: 1.5rem;
+        word-spacing: 0.2rem;
+    }
+
+    body {
+        background-color: #555151;
+        color: #fff;
+    }
+
+    a:not(#downloadLink) {
+        background-color: #fff;
+        color: #1e1e1e;
+        padding: 0.343rem 0.345rem;
+        border-radius: 0 0 0.5rem 0;
+    }
+}
+
+
+#downloadLink {
+    display: inline-block;
+    background-color: rgb(0, 217, 255);
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    cursor: default;
+    text-decoration: none;
+}
+
+.me23 details summary::marker {
+    content: "";
+}
