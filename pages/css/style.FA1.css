@@ -35,7 +35,7 @@ main p {
     margin: 3rem auto;
     width: 45%;
     line-height: 1.7rem;
-    word-spacing: 0.4rem;
+    word-spacing: 0.32rem;
 }
 
 @media screen and (max-width: 481px) and (max-width: 1024px) and (orientation:portrait) {
@@ -49,8 +49,8 @@ main p {
         background-color: #555151;
         color: #fff;
     }
-
-    a:not(#downloadLink) {
+    
+    a:not(#downloadLink, #more) {
         background-color: #fff;
         color: #1e1e1e;
         padding: 0.343rem 0.345rem;
@@ -71,12 +71,12 @@ main p {
         color: #fff;
     }
 
-    a:not(#downloadLink) {
+    a:not(#downloadLink, #more) {
         background-color: #fff;
         color: #1e1e1e;
         padding: 0.343rem 0.345rem;
         border-radius: 0 0 0.5rem 0;
-    }
+    }   
 }
 
 
@@ -86,10 +86,21 @@ main p {
     padding: 0.5rem 0.5rem;
     border-radius: 1rem;
     margin-top: 0.5rem;
-    cursor: default;
     text-decoration: none;
 }
 
 .me23 details summary::marker {
     content: "";
+}
+
+details span a[onclick] {
+    color: red;
+    font-weight: bolder;
+}
+
+a[onclick] span {
+    padding: 0.3rem;
+    color: gold;
+    font-weight: normal;
+    background-color: #000;
 }

@@ -110,7 +110,7 @@ main>article>article>span>a {
     line-height: 1.5;
 }
 
-article span a:hover:not(#downloadLink) {
+article span a:hover:not(#downloadLink, #more) {
     /* Hover effect for link button */
     background-color: rgba(0, 0, 0, 0.226);
     box-shadow: 0 0 0.95rem rgba(0, 0, 0, 0.379);
