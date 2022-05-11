@@ -1,0 +1,11 @@
+#more {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 2rem;
+}
+
+.edit-m {
+    margin: 0 auto 20px auto;
+}
