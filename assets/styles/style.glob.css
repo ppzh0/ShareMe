@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-body /* Body  styling */ {
+body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
@@ -24,8 +24,7 @@ nav /* Navigation Layout */ {
     padding: 0;
 }
 
-nav  span .navLink  {   /* Use Strong Selectors. Don't Use `!important` proprty. Styling links inside the nav element*/
-    /* Layout */
+nav  span .navLink  {
     display: inline-block;
     color: #212529;
     text-align: center;
@@ -35,7 +34,6 @@ nav  span .navLink  {   /* Use Strong Selectors. Don't Use `!important` proprty.
     -webkit-user-select: none; /* For Chrome */
     -moz-user-select: none; 
     user-select: none;
-    /* For Style */
     text-decoration: none;
     cursor: default;
     background-color: transparent;
@@ -53,7 +51,7 @@ nav  span .navLink  {   /* Use Strong Selectors. Don't Use `!important` proprty.
     padding: 2rem;
 }
 
-.navLink:hover /* Hover Effects */ {
+.navLink:hover  {
     color: #ffffff;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     border: 1px solid #82cfff;
@@ -61,7 +59,7 @@ nav  span .navLink  {   /* Use Strong Selectors. Don't Use `!important` proprty.
     transition: color 500ms ease-in-out, background-color 1.20s cubic-bezier(0.68, -0.55, 0.27, 1.55), border-color 100ms ease-in-out, box-shadow 3s ease-out;
 }
 
-.art-main-box {/* layout for main content box */
+.art-main-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +68,6 @@ nav  span .navLink  {   /* Use Strong Selectors. Don't Use `!important` proprty.
 }
 
 .art-child {
-    /* Layout for each card */
     display: grid;
     justify-items: stretch;
     width: clamp(290px/* min */, 310px/* preferred */, 450px /* max */);
@@ -81,7 +78,7 @@ nav  span .navLink  {   /* Use Strong Selectors. Don't Use `!important` proprty.
 }
 
 .art-child:hover {
-    /* Hover effects */
+    
     box-shadow: 0 0 2.55rem rgba(0, 0, 0, 0.4);
     border: 2px dotted rgba(50, 10, 5, 0.303);
     border-radius: 2.2rem;
@@ -110,7 +107,7 @@ main>article>article>span>a {
     line-height: 1.5;
 }
 
-article span a:hover:not(#downloadLink, #more) {
+article span a:hover:not(.downloadLink, #more) {
     /* Hover effect for link button */
     background-color: rgba(0, 0, 0, 0.226);
     box-shadow: 0 0 0.95rem rgba(0, 0, 0, 0.379);
@@ -126,6 +123,12 @@ article span a:hover:not(#downloadLink, #more) {
 article img {
     width: clamp(250px, 260px, 270px);
     padding-top: 2rem;
+}
+
+@media (max-width: 200px) {
+    p {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 481px) and (max-width: 1024px) {

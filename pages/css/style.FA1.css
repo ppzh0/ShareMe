@@ -50,7 +50,7 @@ main p {
         color: #fff;
     }
     
-    a:not(#downloadLink, #more) {
+    a:not(.downloadLink, #more) {
         background-color: #fff;
         color: #1e1e1e;
         padding: 0.343rem 0.345rem;
@@ -71,7 +71,7 @@ main p {
         color: #fff;
     }
 
-    a:not(#downloadLink, #more) {
+    a:not(.downloadLink, #more) {
         background-color: #fff;
         color: #1e1e1e;
         padding: 0.343rem 0.345rem;
@@ -80,7 +80,7 @@ main p {
 }
 
 
-#downloadLink {
+.downloadLink {
     display: inline-block;
     background-color: rgb(0, 217, 255);
     padding: 0.5rem 0.5rem;
