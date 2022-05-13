@@ -30,8 +30,5 @@ In this repository you can learn [`folder management`](https://developer.mozilla
 - Not allowed
     1. Do not make any modification to the `links`
     2. Do not make `any direction` to the `unsafe links` or `crack links`
-<br>
-<br>
-<br>
+
 # That's all you are ready to go
-    
