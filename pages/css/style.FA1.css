@@ -50,7 +50,7 @@ main p {
         color: #fff;
     }
     
-    a:not(.downloadLink, #more) {
+    .backLink {
         background-color: #fff;
         color: #1e1e1e;
         padding: 0.343rem 0.345rem;
@@ -71,7 +71,7 @@ main p {
         color: #fff;
     }
 
-    a:not(.downloadLink, #more) {
+    .backLink {
         background-color: #fff;
         color: #1e1e1e;
         padding: 0.343rem 0.345rem;
