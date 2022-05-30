@@ -194,3 +194,7 @@ details {
     display: flex;
     justify-content: center;
 }
+
+#VERSION {
+    background-color: #ff0000;
+}
