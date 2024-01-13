@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Exo';
+    src: url(../fonts/Exo.ttf);
+}
+
+@font-face {
+    font-family: 'DejaVuSans';
+    src: url(../fonts/DejaVuSans.ttf);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: hsl(13, 100%, 96%);
+    --secondary: #e0ff89;
+    --link: hsl(228, 39%, 23%);
+}
+
+header {
+    min-width: 100%;
+    min-height: 12%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+    background-image: linear-gradient(to right, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2));
+    backdrop-filter: blur(3px);
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+}
+
+header:hover {
+    background-color: black;
+}
+
+nav {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+nav a {
+    border-radius: 4px;
+    outline: 0px solid transparent;
+    color: cornflowerblue;
+    padding: 1em;
+    font-size: 20px;
+}
+
+nav a:hover {
+    outline: 4px solid rgb(72, 185, 255);
+    background-color: transparent;
+    color: white;
+}
+
+main {
+    width: min(650px, calc(70% + 100px));
+    margin: 7rem auto;
+}
+
+/* ui work */
+body {
+    font-family: 'Exo';
+}
+
+.title {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    transition: all .3s ease-in-out;
+}
+
+.title a, #headerLink {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.sub-title {
+    text-shadow: 2px 2px 4px grey;
+    text-transform: capitalize;
+    font-family: 'DejaVuSans';
+}
+
+small {
+    font-size: 7px;
+}
+
+.list-holder li {
+    margin-top: 5px;
+    font-family: Consolas;
+}
+
+header:hover #share, #headerLink:hover #share {
+    color: lightcoral;
+}
+
+header:hover #me, #headerLink:hover #me {
+    color: aqua;
+}
